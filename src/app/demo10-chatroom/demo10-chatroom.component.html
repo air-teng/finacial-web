@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let userMsg of messageList">{{userMsg}}</li>
+</ul>
+<app-demo10-user [userName]="lname" (sendMessage)="displayMessage($event)"></app-demo10-user>
+<app-demo10-user userName="Tom" (sendMessage)="displayMessage($event)"></app-demo10-user>

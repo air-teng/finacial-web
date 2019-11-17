@@ -1,0 +1,7 @@
+<h1 appMyChange="123">这是一个测试</h1>
+<input type="text" [(ngModel)]="inputValue"/>
+<button (click)="add()">追加</button>
+<ul>
+  <li *ngFor="let tmp of liList">{{tmp}}</li>
+  <button (click)="delete()">删除</button>
+</ul>

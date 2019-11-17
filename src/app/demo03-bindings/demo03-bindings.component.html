@@ -1,0 +1,14 @@
+<p>
+  demo03-bindings works!
+</p>
+<!-- 事件绑定 -->
+<button (click)="handleClick()">click Me</button>
+<!-- 属性绑定：将一个表达式的结果，绑定到某一个属性 -->
+<a [href]="myUrl">超链接</a>
+<!-- 双向数据绑定：
+  用在表单元素中
+  方向1：将数据绑定到视图
+  方向2：将视图中用户操作的结果绑定到数据 
+  注意：最好先做双向数据绑定，再做事件绑定
+-->
+<input type="text" [(ngModel)]="myAddress" (ngModelChange)="handleChange()"/>

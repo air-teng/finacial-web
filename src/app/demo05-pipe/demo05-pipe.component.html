@@ -1,0 +1,11 @@
+<!-- 内置管道的基本用法 -->
+<h3>{{stuName | lowercase}}</h3>
+<h3>{{stuName | uppercase}}</h3>
+<h2>{{stuName | slice:3}}</h2>
+<h2>{{stuName | slice:0:4}}</h2>
+<h3>{{price}}</h3>
+<!-- angular管道传参用“：”隔开，参数是数字就传数字，是字符串就传字符串 -->
+<h3>{{price | currency:'CNY'}}</h3>
+<h4>{{totalPrice | number:'4.3' }}</h4>
+<h4>{{progress | percent}}</h4>
+<h5>{{stu | json}}</h5>

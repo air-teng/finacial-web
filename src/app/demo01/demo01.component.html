@@ -1,0 +1,12 @@
+<p>
+  demo01 works!
+</p>
+<h2>{{"学生的姓名是:"+stuName}}</h2>
+
+<p *ngIf="isMember">这是会员专区，只有会员才能看到</p>
+
+<ul>
+  <li *ngFor="let tmp of list;let myIndex=index">
+    {{"index is "+myIndex+" value is "+tmp}}
+  </li>
+</ul>
